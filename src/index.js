@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const formNode = document.querySelector("#create-task-form");
-  formNode.addEventListener("submit", buildTaskLister);
+  const formNode = document.querySelector("form");
+  formNode.addEventListener("submit", taskList);
 });
 
-const buildTaskLister = (e) => {
+const taskList = (e) => {
   e.preventDefault();
   const inputNode = document.querySelector("#new-task-description");
   const tasksNode = document.querySelector("#tasks");
